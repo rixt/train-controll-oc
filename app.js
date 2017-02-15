@@ -4,11 +4,10 @@
  */
 
 var express = require('express');
-/** 
-  bodyParser = require('body-parser'),
-  methodOverride = require('method-override'),
-  errorHandler = require('error-handler'),
-  morgan = require('morgan') **/
+var  bodyParser = require('body-parser');
+var  methodOverride = require('method-override');
+var  errorHandler = require('errorhandler');
+var  morgan = require('morgan'); 
 
 var routes = require('./routes');
 var api = require('./routes/api');
@@ -35,7 +34,7 @@ var env = process.env.NODE_ENV || 'development';
 
 // development only
 if (env === 'development') {
-  app.use(express.errorHandler());
+  app.use(errorHandler());
 }
 
 // production only
