@@ -9,10 +9,10 @@ var express = require('express');
   methodOverride = require('method-override'),
   errorHandler = require('error-handler'),
   morgan = require('morgan') **/
-  
-var routes = require('./routes'),
-var api = require('./routes/api')
-var http = require('http'),
+
+var routes = require('./routes');
+var api = require('./routes/api');
+var http = require('http');
 var path = require('path');
 
 var app = module.exports = express();
