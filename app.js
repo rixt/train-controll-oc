@@ -3,15 +3,17 @@
  * Module dependencies
  */
 
-var express = require('express'),
+var express = require('express');
+/** 
   bodyParser = require('body-parser'),
   methodOverride = require('method-override'),
   errorHandler = require('error-handler'),
-  morgan = require('morgan'),
-  routes = require('./routes'),
-  api = require('./routes/api'),
-  http = require('http'),
-  path = require('path');
+  morgan = require('morgan') **/
+  
+var routes = require('./routes'),
+var api = require('./routes/api')
+var http = require('http'),
+var path = require('path');
 
 var app = module.exports = express();
 
